@@ -89,6 +89,9 @@
   cursor: pointer;
   font-size: 40px;
   animation: slideLeft 1s;
+  a:hover {
+    color: $red;
+  }
   a,
   a:active,
   a:visited {
