@@ -11,7 +11,6 @@ export const getMessages = async (req, res) => {
 
 export const addMessage = async (req, res) => {
   const userMessage = req.body.message;
-  console.log(userMessage)
   const newUserMessage = new Message(userMessage)
 
   try {
