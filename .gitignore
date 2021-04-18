@@ -5,12 +5,12 @@
 node_modules/
 
 # dependencies
-/client/node_modules
+/client/node_modules/
 /client/.pnp
 /client/.pnp.js
 
 # testing
- /client/coverage
+/client/coverage
 
 # production
 /client/build
