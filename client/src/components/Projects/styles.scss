@@ -1,0 +1,154 @@
+@import "src/_variables.scss";
+
+.page {
+  height: 100%;
+}
+.nav {
+  animation: slideUDownwards 0.5s;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  @include flex(center, center);
+  i {
+    color: $orange;
+    font-size: 100px;
+    animation: spinner 0.6s linear infinite;
+  }
+}
+
+.headline {
+  font-size: 25px;
+  margin: 100px 0 50px 0 !important;
+  animation: slideRight 2s ease-out;
+  color: $red;
+}
+.projects {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 50px auto;
+}
+
+.projectThumb {
+  background-color: transparent;
+  width: 450px;
+  height: 290px;
+  margin: 10px;
+  perspective: 1000px;
+}
+
+.projectThumbInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.projectThumb:hover .projectThumbInner {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 450px;
+  height: 290px;
+  border-radius: 10px;
+  box-shadow: $shadow;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  @include flex(center, center);
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(135deg, $yellow 0%, $orange 100%);
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  position: relative;
+  box-shadow: $shadow;
+
+  .siteInfo {
+    @include flex(center, center);
+
+    .name {
+      width: 45%;
+      border-right: 1px solid white;
+      padding: 5px;
+    }
+    .lang {
+      width: 55%;
+      @include flex(center, center);
+      flex-direction: column;
+    }
+  }
+
+  h1 {
+    font-family: $ParagraphFont;
+    font-size: 32px;
+  }
+  h2 {
+    margin-bottom: 10%;
+    font-family: $ParagraphFont;
+    font-weight: 300;
+    font-size: 17px;
+  }
+  h3,
+  a {
+    width: 80%;
+    font-family: $ParagraphFont;
+    font-weight: 500;
+  }
+  h4 {
+    z-index: 1;
+    width: 80%;
+    font-family: $ParagraphFont;
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: $smallFont;
+  }
+  a {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    text-decoration: none;
+    margin-top: 30px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.3);
+      transition: all 0.2s;
+      color: white;
+    }
+    &:visited {
+      color: white;
+    }
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.projectThumb:nth-child(1) {
+  animation: slideUp 2s;
+}
+.projectThumb:nth-child(2) {
+  animation: slideUp 2.25s;
+}
+.projectThumb:nth-child(3) {
+  animation: slideUp 2.5s;
+}
+.projectThumb:nth-child(4) {
+  animation: slideUp 2.75s;
+}

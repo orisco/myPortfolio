@@ -1,0 +1,83 @@
+@import "src/_variables.scss";
+
+.intro {
+  margin: 0;
+  @include fullScreen;
+  @include flex(center, center);
+  font-family: $HeadlineFont;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 89, 94, 1) 0%,
+    rgba(242, 112, 89, 1) 26%,
+    rgba(244, 132, 95, 1) 50%,
+    rgba(247, 157, 101, 1) 74%,
+    rgba(247, 178, 103, 1) 100%
+  );
+  animation: slideUDownwards 0.5s;
+}
+
+.introduction {
+  width: 80%;
+  @include flex(center, center);
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+
+.slideUp {
+  animation: slideUpwards 2s;
+}
+.firstTitle,
+.secondTitle,
+.thirdTitle,
+.fourthTitle,
+.fifthTitle {
+  font-family: $SkillsFont;
+  font-size: 80px;
+  position: absolute;
+  opacity: 0;
+  animation: popOut 3s;
+}
+
+.firstTitle {
+  animation: popOut 1s;
+}
+
+.secondTitle {
+  animation: popOut 1s 1s;
+}
+
+.thirdTitle {
+  animation: popOut 1s 2s;
+}
+.fourthTitle {
+  animation: popOut 1s 3s;
+}
+.fifthTitle {
+  animation: popOutStay 1s 4s infinite;
+}
+
+.fifthTitle {
+  // margin-top: 50px;
+  // font-weight: 100;
+  // font-family: $ParagraphFont;
+  // font-size: 40px;
+  transition: all 0.05s 0.05s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+.introduction button {
+  margin-top: 25px;
+  @include button(rgb(41, 41, 41));
+  animation: none;
+}
+
+.introduction button:focus {
+  outline: none;
+}
+.introduction button:hover {
+  @include buttonHover($lightRed);
+}

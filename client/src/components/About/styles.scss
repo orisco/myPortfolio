@@ -1,0 +1,281 @@
+@import "src/_variables.scss";
+
+.page {
+  margin: 0;
+  padding: 0;
+  @include fullScreen;
+}
+
+.nav {
+  position: fixed;
+  height: 40px;
+  animation: slideUDownwards 0.5s;
+}
+.slideUp {
+  animation: slideUpwards 5s;
+}
+.content {
+  height: calc(100% - 40px);
+  width: 100%;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  color: white;
+  animation: slideUDownwards 0.9s;
+
+  .headline {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    h1 {
+      margin-bottom: 10px;
+      font-family: $SkillsFont;
+      letter-spacing: 2px;
+      font-size: 80px;
+    }
+    h3 {
+      font-family: $ParagraphFont;
+      font-weight: 100;
+      letter-spacing: 1px;
+      color: black;
+      font-size: $MediumFont;
+    }
+    .fa-chevron-right {
+      margin-left: 5px;
+      color: $light-dark;
+    }
+    .continue {
+      margin-top: 20px;
+      font-size: $largeFont;
+      font-weight: 300;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.3);
+        transition: all 0.2s;
+        .fa-chevron-right {
+          animation: turn 0.9s;
+        }
+      }
+    }
+  }
+
+  .skills {
+    width: 80%;
+    margin-left: 10%;
+    height: 60%;
+    @include flex(center, center);
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .firstSell {
+      animation: bounce1 1s linear;
+      &:hover {
+        background: $lightOrange;
+        h3 {
+          display: none;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+    }
+    .secondSell {
+      animation: bounce1 1.1s linear;
+
+      &:hover {
+        background: $lightOrange;
+        h3 {
+          display: none;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+    }
+    .thirdSell {
+      animation: bounce1 1.2s linear;
+      &:hover {
+        background: $lightOrange;
+        h3 {
+          display: none;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+    }
+
+    .buildingSkills {
+      width: 40%;
+      @include flex(flex-end, center);
+      flex-direction: column;
+
+      div {
+        @include flex(center, center);
+        flex-direction: column;
+        color: white;
+        background: linear-gradient(135deg, $lightRed 0%, $orange 100%);
+        margin: 10px;
+        padding: 5px;
+        width: 250px;
+        height: 80px;
+        box-shadow: 5px 5px #dadada;
+
+        h3 {
+          text-align: center;
+          font-family: $SkillsFont;
+          font-size: 30px;
+          animation: image 0.5s;
+        }
+
+        p {
+          font-family: $HeadlineFont;
+          text-align: center;
+          font-weight: 300;
+          display: none;
+          animation: image 1s;
+          padding: 10px;
+        }
+      }
+    }
+
+    .expertise {
+      font-family: $ParagraphFont;
+      @include flex(center, center);
+      flex-direction: column;
+      // width: 40%;
+      div {
+        height: 25px;
+        padding: 2px;
+        width: 450px;
+        margin-bottom: 5px;
+        @include flex(center, space-between);
+        &:hover {
+          .percentageLine {
+            animation: hoverSkills 3s infinite;
+          }
+        }
+        .percentageLine {
+          @include flex(center, flex-end);
+          padding-left: 10px;
+          background: $yellow;
+          height: 25px;
+          animation: openRight 2s ease-in;
+          font-family: $SkillsFont;
+          position: relative;
+        }
+
+        h3 {
+          padding: 4px 20px;
+          font-family: $SkillsFont;
+          letter-spacing: 2px;
+          position: absolute;
+          left: 5px;
+          font-size: 17px;
+          color: white;
+          background-color: $orange;
+        }
+
+        p {
+          font-family: $SkillsFont;
+          letter-spacing: 2px;
+          text-align: right;
+          color: $lightOrange;
+          color: white;
+        }
+      }
+      div:first-child {
+        .percentageLine {
+          width: 90%;
+          animation: openRight 2.3s ease-out;
+          h3 {
+            animation: open 1.6s ease-out;
+          }
+        }
+      }
+      div:nth-child(2) {
+        .percentageLine {
+          width: 90%;
+          animation: openRight 2.5s ease-out;
+          h3 {
+            animation: open 1.7s ease-in;
+          }
+        }
+      }
+      div:nth-child(3) {
+        .percentageLine {
+          width: 70%;
+          animation: openRight 2.7s ease-out;
+          h3 {
+            animation: open 1.8s ease-in;
+          }
+        }
+      }
+      div:nth-child(4) {
+        .percentageLine {
+          width: 60%;
+          animation: openRight 2.9s ease-out;
+          h3 {
+            animation: open 1.9s ease-in;
+          }
+        }
+      }
+      div:nth-child(5) {
+        .percentageLine {
+          width: 60%;
+          animation: openRight 3.1s ease-out;
+          h3 {
+            animation: open 2s ease-in;
+            min-width: 160px;
+          }
+        }
+      }
+      div:nth-child(6) {
+        .percentageLine {
+          width: 70%;
+          animation: openRight 3.3s ease-out;
+          h3 {
+            animation: open 2.1s ease-in;
+            min-width: 190px;
+          }
+        }
+      }
+      div:nth-child(7) {
+        .percentageLine {
+          width: 80%;
+          animation: openRight 3.5s ease-out;
+        }
+        h3 {
+          animation: open 2.2s ease-in;
+        }
+      }
+      div:nth-child(8) {
+        .percentageLine {
+          width: 70%;
+          animation: openRight 3.7s ease-out;
+        }
+        h3 {
+          animation: open 2.2s ease-in;
+        }
+      }
+      div:nth-child(9) {
+        .percentageLine {
+          width: 70%;
+          animation: openRight 3.9s ease-out;
+        }
+        h3 {
+          animation: open 2.3s ease-in;
+        }
+      }
+      div:nth-child(10) {
+        .percentageLine {
+          width: 60%;
+          animation: openRight 4.1s ease-out;
+        }
+        h3 {
+          animation: open 2.4s ease-in;
+          min-width: 140px;
+        }
+      }
+    }
+  }
+}

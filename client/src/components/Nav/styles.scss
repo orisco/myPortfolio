@@ -1,0 +1,25 @@
+@import "src/_variables.scss";
+
+.nav-wrapper {
+  width: 100vw;
+  height: 40px;
+  flex-direction: row;
+  backdrop-filter: blur(5px);
+  display: absolute;
+  @include flex(center, center);
+  background: rgba(255, 255, 255, 0.863);
+  z-index: 1;
+
+  p {
+    font-size: $smallFont;
+    letter-spacing: 2px;
+    margin: 30px;
+    cursor: pointer;
+    color: $red;
+    font-family: $HeadlineFont;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.2s;
+    }
+  }
+}

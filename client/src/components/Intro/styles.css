@@ -1,0 +1,86 @@
+@import "src/_variables.scss";
+
+.intro {
+  margin: 0;
+  background-color: #131313;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.introduction {
+  width: 550px;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  color: white;
+  font-size: larger;
+}
+
+.introduction span {
+  color: #ff595e;
+}
+
+.introduction button {
+  padding: 10px 20px;
+  margin-top: 25px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  /* border-radius: 10px; */
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes hover {
+  from {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  to {
+    background-color: #1982c4;
+    border: 1px solid #1982c4;
+  }
+}
+
+@keyframes hover {
+  from {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  to {
+    background-color: #1982c4;
+    border: 1px solid #1982c4;
+  }
+}
+
+.introduction button:focus {
+  outline: none;
+}
+
+.introduction button:hover {
+  background-color: #1982c4;
+  border: 1px solid #1982c4;
+  -webkit-animation: hover 0.5s ease-out alternate;
+  animation: hover 0.5s ease-out alternate;
+}
+/*# sourceMappingURL=styles.css.map */
