@@ -18,7 +18,7 @@ const [website, setWebsite] = useState([{
 }])
 
 useEffect(() => {
-  axios.get(`http://localhost:5000/admin/all`)
+  axios.get(`http://localhost:80/admin/all`)
   .then(res => {
     setWebsite(res.data)
     setLoading(false)
