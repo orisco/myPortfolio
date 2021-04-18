@@ -43,7 +43,7 @@ if (isLoading) {
         <h1>PROJECTS</h1>
         </div>
         <div className="projects">
-          {website.map((site) => {
+          {website && website.map((site) => {
             return <Project site={site} key={site._id}/>
           })}
         </div>

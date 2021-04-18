@@ -22,7 +22,6 @@ export default function Admin() {
     axios.get('/admin/messages')
     .then(res => {
       setMail(res.data)
-      console.log(res.data)
     })
   }, [])
   
