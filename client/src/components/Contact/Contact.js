@@ -34,7 +34,7 @@ export default function Contact() {
     setSubmit(true)
     setMessage({...message, date: new Date()})
     console.log(message)
-    axios.post(`http://localhost:5000/admin/new-message`,  {message})
+    axios.post(`/admin/new-message`,  {message})
       .then(res => {
         console.log(res);
       })

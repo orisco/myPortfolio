@@ -19,7 +19,7 @@ export default function Admin() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:5000/admin/messages')
+    axios.get('/admin/messages')
     .then(res => {
       setMail(res.data)
       console.log(res.data)
@@ -27,7 +27,7 @@ export default function Admin() {
   }, [])
   
   const addWebsite = () => {
-    axios.post(`http://localhost:5000/admin/new-website`, { title, description, languages, details, websiteURL, imageURL })
+    axios.post(`/admin/new-website`, { title, description, languages, details, websiteURL, imageURL })
       .then(res => {
         console.log(res);
       })
