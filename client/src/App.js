@@ -12,6 +12,7 @@ import Projects from './components/Projects/Projects';
 const App = () => {
   return (
     <Router>
+      <Route path="" exact component={Intro}/>  
        <Route path="/home" exact component={Intro}/>  
        <Route path="/about" exact component={About}/>  
        <Route path="/projects" exact component={Projects}/>
