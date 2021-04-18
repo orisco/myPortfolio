@@ -20,7 +20,7 @@ app.use(express.json())
   // Serve only the static files form the dist directory
   app.use(express.static(__dirname + '/client/build'));
   app.get('/*', function(req,res) {  
-  res.sendFile(path.join(__dirname+'/client/built/index.html'));
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
   });
 // }
 
