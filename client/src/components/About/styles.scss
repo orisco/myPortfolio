@@ -149,11 +149,7 @@
         width: 400px;
         margin-bottom: 5px;
         @include flex(center, space-between);
-        &:hover {
-          .percentageLine {
-            background: $orange;
-          }
-        }
+
         .percentageLine {
           @include flex(center, flex-end);
           padding-left: 10px;
