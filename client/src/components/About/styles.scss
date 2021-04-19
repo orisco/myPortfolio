@@ -105,8 +105,8 @@
     }
 
     .buildingSkills {
-      width: 40%;
-      @include flex(flex-end, center);
+      width: 50%;
+      @include flex(center, center);
       flex-direction: column;
 
       div {
@@ -142,16 +142,16 @@
       font-family: $ParagraphFont;
       @include flex(center, center);
       flex-direction: column;
-      // width: 30%;
+      width: 50%;
       div {
         height: 25px;
         padding: 2px;
-        width: 450px;
+        width: 400px;
         margin-bottom: 5px;
         @include flex(center, space-between);
         &:hover {
           .percentageLine {
-            animation: hoverSkills 3s infinite;
+            background: $orange;
           }
         }
         .percentageLine {
@@ -185,7 +185,7 @@
       }
       div:first-child {
         .percentageLine {
-          width: 90% !important;
+          width: 90%;
           animation: openRight 2.3s ease-out;
           h3 {
             animation: open 1.6s ease-out;
@@ -194,8 +194,8 @@
       }
       div:nth-child(2) {
         .percentageLine {
-          width: 90% !important;
-          animation: openRight 2.5s ease-out;
+          width: 90%;
+          animation: openRight 2.4s ease-out;
           h3 {
             animation: open 1.7s ease-in;
           }
@@ -203,8 +203,8 @@
       }
       div:nth-child(3) {
         .percentageLine {
-          width: 70% !important;
-          animation: openRight 2.7s ease-out;
+          width: 70%;
+          animation: openRight 2.5s ease-out;
           h3 {
             animation: open 1.8s ease-in;
           }
@@ -212,8 +212,8 @@
       }
       div:nth-child(4) {
         .percentageLine {
-          width: 60% !important;
-          animation: openRight 2.9s ease-out;
+          width: 60%;
+          animation: openRight 2.6s ease-out;
           h3 {
             animation: open 1.9s ease-in;
           }
@@ -221,8 +221,8 @@
       }
       div:nth-child(5) {
         .percentageLine {
-          width: 60% !important;
-          animation: openRight 3.1s ease-out;
+          width: 60%;
+          animation: openRight 2.7s ease-out;
           h3 {
             animation: open 2s ease-in;
             min-width: 160px;
@@ -231,8 +231,8 @@
       }
       div:nth-child(6) {
         .percentageLine {
-          width: 70% !important;
-          animation: openRight 3.3s ease-out;
+          width: 70%;
+          animation: openRight 2.8s ease-out;
           h3 {
             animation: open 2.1s ease-in;
             min-width: 190px;
@@ -241,8 +241,8 @@
       }
       div:nth-child(7) {
         .percentageLine {
-          width: 80% !important;
-          animation: openRight 3.5s ease-out;
+          width: 80%;
+          animation: openRight 2.9s ease-out;
         }
         h3 {
           animation: open 2.2s ease-in;
@@ -250,8 +250,8 @@
       }
       div:nth-child(8) {
         .percentageLine {
-          width: 70% !important;
-          animation: openRight 3.7s ease-out;
+          width: 70%;
+          animation: openRight 3s ease-out;
         }
         h3 {
           animation: open 2.2s ease-in;
@@ -259,8 +259,8 @@
       }
       div:nth-child(9) {
         .percentageLine {
-          width: 70% !important;
-          animation: openRight 3.9s ease-out;
+          width: 70%;
+          animation: openRight 3.1s ease-out;
         }
         h3 {
           animation: open 2.3s ease-in;
@@ -268,8 +268,8 @@
       }
       div:nth-child(10) {
         .percentageLine {
-          width: 60% !important;
-          animation: openRight 4.1s ease-out;
+          width: 60%;
+          animation: openRight 3.2s ease-out;
         }
         h3 {
           animation: open 2.4s ease-in;
@@ -298,16 +298,9 @@
     font-family: $ParagraphFont;
     @include flex(center, center);
     flex-direction: column;
-    width: 50% !important;
-    // width: 20% !important;
-    div {
-      width: 400px !important;
-    }
+    // width: 50% !important;
+    // div {
+    //   width: 400px;
+    // }
   }
-  // .skills {
-  //   width: 0% !important;
-  // }
-  // .content {
-  //   width: 100%;
-  // }
 }

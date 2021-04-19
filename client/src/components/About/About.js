@@ -101,15 +101,20 @@ export default function About() {
           <div className="buildingSkills">
             <div className="firstSell">
               <h3>Responsive Design</h3>
-              <p>MY LAYOUTS FOR ANY DEVIDE, BIG OR SMALL</p>
+              <p>I BUILD LAYOUTS FOR ANY DEVICE, BIG OR SMALL</p>
             </div>
             <div className="secondSell">
               <h3>Fast & Dynamic</h3>
-              <p>FAST LOAD TIMES, ORGANIZED CODE</p>
+              <p>
+                I'M ORGANIZED, EFFICIENT & PRACTICAL, AND MY CODE SHOWS IT :)
+              </p>
             </div>
             <div className="thirdSell">
               <h3>Intuitive UX/UI</h3>
-              <p>EASY TO USE, ANIMATED INTERFACE</p>
+              <p>
+                WITH MY UX/UI BACKGROUND, I BUILD USER FRIENDLY, ANIMATED
+                INTERFACES
+              </p>
             </div>
           </div>
         </div>
