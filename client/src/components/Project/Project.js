@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-export default function Project({site}) {
+export default function Project({ site }) {
   return (
     <div className="projectThumb">
       <div className="projectThumbInner">
@@ -14,13 +14,18 @@ export default function Project({site}) {
               <h2>{site.description}</h2>
             </div>
             <div className="lang">
-               <h3>{site.languages}</h3>
-               <h4>{site.details}</h4>
+              <h3>{site.languages}</h3>
+              <h4>{site.details}</h4>
             </div>
+          </div>
+          <h3
+            className="click"
+            onClick={() => window.open(site.websiteURL, "_blank")}
+          >
+            Visit Site
+          </h3>
         </div>
-        <a href={site.websiteURL} target="_blank" rel="noreferrer">Visit</a>
       </div>
     </div>
-  </div>
-  )
+  );
 }

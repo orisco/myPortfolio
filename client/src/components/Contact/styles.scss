@@ -39,6 +39,7 @@
     &:hover {
       transition: 0.5s;
       transform: scale(1.2);
+      color: $orange;
     }
   }
   h3,
@@ -89,18 +90,6 @@
   cursor: pointer;
   font-size: 40px;
   animation: slideLeft 1s;
-  a:hover {
-    i {
-      color: $red !important;
-    }
-  }
-  a,
-  a:active,
-  a:visited {
-    i {
-      color: black;
-    }
-  }
   i {
     margin: 15px;
     &:hover {

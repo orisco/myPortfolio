@@ -142,7 +142,7 @@
       font-family: $ParagraphFont;
       @include flex(center, center);
       flex-direction: column;
-      // width: 40%;
+      // width: 30%;
       div {
         height: 25px;
         padding: 2px;
@@ -282,7 +282,7 @@
 
 @media only screen and (max-width: 940px) {
   .skills {
-    width: 100%;
+    width: 70%;
     margin-left: 0%;
     height: 60%;
     @include flex(center, center);
