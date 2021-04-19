@@ -90,19 +90,21 @@
   font-size: 40px;
   animation: slideLeft 1s;
   a:hover {
-    color: $red;
+    i {
+      color: $red !important;
+    }
   }
   a,
   a:active,
   a:visited {
     i {
-      color: black !important;
+      color: black;
     }
   }
   i {
     margin: 15px;
     &:hover {
-      color: $red;
+      color: $red !important;
       transition: 0.1s;
       transform: scale(1.3);
     }

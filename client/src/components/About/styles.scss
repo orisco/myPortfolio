@@ -279,3 +279,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 940px) {
+  .skills {
+    width: 100%;
+    margin-left: 0%;
+    height: 60%;
+    @include flex(center, center);
+    flex-direction: row;
+  }
+  .buildingSkills {
+    margin-top: 50px;
+    width: 100% !important;
+    @include flex(center !important, center);
+    flex-direction: column;
+  }
+}
