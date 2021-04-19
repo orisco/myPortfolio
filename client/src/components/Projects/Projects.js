@@ -29,7 +29,7 @@ export default function Projects() {
   if (isLoading) {
     return (
       <div className="loading">
-        <i class="fas fa-spinner"></i>
+        <i className="fas fa-spinner"></i>
       </div>
     );
   }

@@ -185,7 +185,7 @@
       }
       div:first-child {
         .percentageLine {
-          width: 90%;
+          width: 90% !important;
           animation: openRight 2.3s ease-out;
           h3 {
             animation: open 1.6s ease-out;
@@ -194,7 +194,7 @@
       }
       div:nth-child(2) {
         .percentageLine {
-          width: 90%;
+          width: 90% !important;
           animation: openRight 2.5s ease-out;
           h3 {
             animation: open 1.7s ease-in;
@@ -203,7 +203,7 @@
       }
       div:nth-child(3) {
         .percentageLine {
-          width: 70%;
+          width: 70% !important;
           animation: openRight 2.7s ease-out;
           h3 {
             animation: open 1.8s ease-in;
@@ -212,7 +212,7 @@
       }
       div:nth-child(4) {
         .percentageLine {
-          width: 60%;
+          width: 60% !important;
           animation: openRight 2.9s ease-out;
           h3 {
             animation: open 1.9s ease-in;
@@ -221,7 +221,7 @@
       }
       div:nth-child(5) {
         .percentageLine {
-          width: 60%;
+          width: 60% !important;
           animation: openRight 3.1s ease-out;
           h3 {
             animation: open 2s ease-in;
@@ -231,7 +231,7 @@
       }
       div:nth-child(6) {
         .percentageLine {
-          width: 70%;
+          width: 70% !important;
           animation: openRight 3.3s ease-out;
           h3 {
             animation: open 2.1s ease-in;
@@ -241,7 +241,7 @@
       }
       div:nth-child(7) {
         .percentageLine {
-          width: 80%;
+          width: 80% !important;
           animation: openRight 3.5s ease-out;
         }
         h3 {
@@ -250,7 +250,7 @@
       }
       div:nth-child(8) {
         .percentageLine {
-          width: 70%;
+          width: 70% !important;
           animation: openRight 3.7s ease-out;
         }
         h3 {
@@ -259,7 +259,7 @@
       }
       div:nth-child(9) {
         .percentageLine {
-          width: 70%;
+          width: 70% !important;
           animation: openRight 3.9s ease-out;
         }
         h3 {
@@ -268,7 +268,7 @@
       }
       div:nth-child(10) {
         .percentageLine {
-          width: 60%;
+          width: 60% !important;
           animation: openRight 4.1s ease-out;
         }
         h3 {
@@ -294,4 +294,20 @@
     @include flex(center !important, center);
     flex-direction: column;
   }
+  .expertise {
+    font-family: $ParagraphFont;
+    @include flex(center, center);
+    flex-direction: column;
+    width: 50% !important;
+    // width: 20% !important;
+    div {
+      width: 400px !important;
+    }
+  }
+  // .skills {
+  //   width: 0% !important;
+  // }
+  // .content {
+  //   width: 100%;
+  // }
 }

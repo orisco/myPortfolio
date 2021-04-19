@@ -1,47 +1,49 @@
-import React, { useState } from 'react'
-import Nav from '../Nav/Nav'
-import './styles.scss'
-import {useHistory} from "react-router-dom";
+import React, { useState } from "react";
+import Nav from "../Nav/Nav";
+import "./styles.scss";
+import { useHistory } from "react-router-dom";
 
 export default function About() {
-  const history = useHistory()
-  const [slideUpclass, setSlideUpClass] = useState(false)
+  const history = useHistory();
+  const [slideUpclass, setSlideUpClass] = useState(false);
 
   const clickToProjects = () => {
-    setSlideUpClass(true)
+    setSlideUpClass(true);
     setTimeout(() => {
-      history.push(`/projects`)
+      history.push(`/projects`);
     }, 300);
-  }
+  };
 
   return (
-    <div className={slideUpclass ? "page slideUp" : "page" }>
+    <div className={slideUpclass ? "page slideUp" : "page"}>
       <div className="nav">
-        <Nav setSlideUpClass={setSlideUpClass}/>
+        <Nav setSlideUpClass={setSlideUpClass} />
       </div>
       <div className="content">
         <div className="headline">
           <h1>ABOUT</h1>
-          <h3>SERIOUSLY PASSIONATE ABOUT BUILDING & PROGRAMMING<br></br> ENGAGING, INTERACTIVE APPS</h3>
-          <h3 className="continue" onClick={()=> clickToProjects()}>VIEW PROJECTS<i className="fas fa-chevron-right"></i></h3>
+          <h3>
+            SERIOUSLY PASSIONATE ABOUT BUILDING & PROGRAMMING<br></br> ENGAGING,
+            INTERACTIVE APPS
+          </h3>
+          <h3 className="continue" onClick={() => clickToProjects()}>
+            VIEW PROJECTS<i className="fas fa-chevron-right"></i>
+          </h3>
         </div>
 
-
         <div className="skills">
-       
-            <div className="expertise">
-
+          <div className="expertise">
             <div>
               <div className="percentageLine">
                 <h3>HTML</h3>
                 <p>90%</p>
-              </div> 
+              </div>
             </div>
 
             <div>
               <div className="percentageLine">
-              <h3>CSS & SASS</h3>
-              <p>90%</p>
+                <h3>CSS & SASS</h3>
+                <p>90%</p>
               </div>
             </div>
 
@@ -57,7 +59,7 @@ export default function About() {
                 <h3>TypeScript</h3>
                 <p>60%</p>
               </div>
-              </div>
+            </div>
             <div>
               <div className="percentageLine">
                 <h3>Node.js & Express</h3>
@@ -77,26 +79,26 @@ export default function About() {
               </div>
             </div>
             <div>
-            <div className="percentageLine">
-              <h3>MongoDB</h3>
-              <p>70%</p>
+              <div className="percentageLine">
+                <h3>MongoDB</h3>
+                <p>70%</p>
+              </div>
+            </div>
+            <div>
+              <div className="percentageLine">
+                <h3>MySQL</h3>
+                <p>70%</p>
+              </div>
+            </div>
+            <div>
+              <div className="percentageLine">
+                <h3>Adobe Photoshop</h3>
+                <p>60%</p>
+              </div>
             </div>
           </div>
-          <div>
-            <div className="percentageLine">
-              <h3>MySQL</h3>
-              <p>70%</p>
-            </div>
-          </div>
-          <div>
-            <div className="percentageLine">
-              <h3>Adobe Photoshop</h3>
-              <p>60%</p>
-            </div>
-          </div>
-      </div>
 
-        <div className="buildingSkills">
+          <div className="buildingSkills">
             <div className="firstSell">
               <h3>Responsive Design</h3>
               <p>MY LAYOUTS FOR ANY DEVIDE, BIG OR SMALL</p>
@@ -110,8 +112,8 @@ export default function About() {
               <p>EASY TO USE, ANIMATED INTERFACE</p>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
-  )
+  );
 }
